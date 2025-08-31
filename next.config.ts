@@ -18,10 +18,7 @@ const nextConfig: NextConfig = {
 		remotePatterns: [
 			{
 				protocol: "https",
-				hostname: "blogger.googleusercontent.com",
-				port: "",
-				pathname: "/img/**",
-				search: "",
+				hostname: "**",
 			},
 		],
 	},
