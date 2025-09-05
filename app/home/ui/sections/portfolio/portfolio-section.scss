@@ -22,7 +22,7 @@
 		}
 	}
 	.portfolio-items-container {
-		@include grid-container.grid(3, "horizontal", true, true);
+		@include grid-container.grid(2, "horizontal", true, true);
 
 		margin-left: -0.5em;
 
