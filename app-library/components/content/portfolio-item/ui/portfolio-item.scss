@@ -16,9 +16,10 @@
 		}
 		.category-container {
 			@include image-card-details-text.footnote;
-			.category {
-				font-style: italic;
-			}
+
+			// .category {
+			// 	font-style: italic;
+			// }
 
 			margin-top: auto;
 			color: var(--primary-color-1);
@@ -34,6 +35,8 @@
 		.description {
 			@include image-card-details-text.body(true);
 			@include text.limit-lines(5);
+
+			line-height: 2.2;
 		}
 	}
 }
