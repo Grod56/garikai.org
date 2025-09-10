@@ -50,7 +50,7 @@ const PortfolioSection = function ({ model }) {
 								model={newReadonlyModel({
 									Component: ImageCardSkeleton,
 									componentModels:
-										Array<ImageCardSkeletonModel>(3).fill(
+										Array<ImageCardSkeletonModel>(4).fill(
 											newReadonlyModel({
 												orientation: "vertical",
 											}),

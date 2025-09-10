@@ -25,7 +25,8 @@
 	.portfolio-items-container {
 		@include grid-container.grid(4, "horizontal", true, true);
 
-		max-width: fit-content;
+		// max-width: fit-content;
+
 		margin-left: -0.5em;
 		padding-right: 3em;
 
