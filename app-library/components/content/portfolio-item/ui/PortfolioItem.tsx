@@ -23,7 +23,7 @@ const PortfolioItem = function ({ model }) {
 					<h5 className="title">{title}</h5>
 					<span className="description">{description}</span>
 					<span className="category-container">
-						categories: <span className="category">{category}</span>
+						Categories: <span className="category">{category}</span>
 					</span>
 				</ImageCard>
 			</LinkedComponent>
