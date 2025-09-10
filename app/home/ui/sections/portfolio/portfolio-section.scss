@@ -19,6 +19,7 @@
 	.site-section[data-sectionname="portfolio"] {
 		.content-layer {
 			max-width: 100%;
+			padding-right: 0;
 		}
 	}
 	.portfolio-items-container {
@@ -26,13 +27,14 @@
 
 		max-width: fit-content;
 		margin-left: -0.5em;
+		padding-right: 3em;
 
 		.portfolio-item,
 		.image-card-skeleton {
 			@include objects.definitive-dimension(height, 100%);
 		}
 		.portfolio-item {
-			@include objects.definitive-dimension(width, 21em);
+			@include objects.definitive-dimension(width, 20em);
 		}
 		.image-card-skeleton {
 			@include objects.definitive-dimension(width, 100%);
