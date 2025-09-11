@@ -50,11 +50,11 @@ body {
 
 	::-webkit-scrollbar-thumb {
 		background: rgba(theme.$secondary-a-color-3, 0.35);
-		border-radius: 5px;
+		// border-radius: 5px;
 	}
 
 	::-webkit-scrollbar-thumb:hover {
 		background: rgba(theme.$secondary-a-color-3, 0.45);
-		border-radius: 5px;
+		// border-radius: 5px;
 	}
 }
