@@ -49,19 +49,13 @@ const footerModel = newFooterModel({
 		{
 			socialLink: {
 				type: "Instagram",
-				link: "https://instagram.com/garikai_art",
+				link: "https://instagram.com/_garikai_",
 			},
 		},
 		{
 			socialLink: {
 				type: "YouTube",
 				link: "https://youtube.com/c/GarikaiGumbo",
-			},
-		},
-		{
-			socialLink: {
-				type: "Facebook",
-				link: "https://facebook.com/garikairodney",
 			},
 		},
 		{
