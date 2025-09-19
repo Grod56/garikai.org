@@ -13,6 +13,7 @@ const testRecords: PostPreviewRecord[] = [
 		author: "Michael Timothy",
 		publishedDate: `${Date.now()}`,
 		postLink: "https://link.th/dfbdbd",
+		thumbnailPlaceholder: "data:sadarnng/adfasfasf",
 	},
 	{
 		id: "askcnuiuiq8922212",
@@ -23,6 +24,7 @@ const testRecords: PostPreviewRecord[] = [
 		author: "Theresa Nay",
 		publishedDate: `${Date.now()}`,
 		postLink: "https://my.link/fgbfb",
+		thumbnailPlaceholder: "data:sadarnng/adfasfasf",
 	},
 ];
 
