@@ -14,9 +14,6 @@ import {
 	PostPreviewRepositoryModelView,
 } from "../../content-repositories/post-preview";
 
-const imagePlaceholder = process.env
-	.NEXT_PUBLIC_DEFAULT_IMAGE_PLACEHOLDER! as ImagePlaceholder;
-
 type PostPreviewRepositoryViewInteractionInterface = ViewInteractionInterface<
 	PostPreviewRepositoryModelView,
 	PostPreviewRepositoryModelInteraction
@@ -52,7 +49,8 @@ async function _retrievePostPreviewRepositorySnapshot(
 				thumbnail: {
 					source: record.thumbnailSource,
 					alt: `${record.title} Thumbnail`,
-					placeholder: imagePlaceholder,
+					placeholder:
+						record.thumbnailPlaceholder as ImagePlaceholder,
 				},
 			});
 		},
@@ -67,7 +65,8 @@ async function _retrievePostPreviewRepositorySnapshot(
 		thumbnail: {
 			source: featuredPostPreviewRecord.thumbnailSource,
 			alt: `${featuredPostPreviewRecord.title} Thumbnail`,
-			placeholder: imagePlaceholder,
+			placeholder:
+				featuredPostPreviewRecord.thumbnailPlaceholder as ImagePlaceholder,
 		},
 	});
 	return { recentPostPreviewModels, featuredPostPreviewModel };
