@@ -5,6 +5,9 @@ import {
 	supabaseSpySelectMockImplementation,
 } from "./data";
 import { newSupabaseBookPreviewAPI } from "../../book-preview/api";
+jest.mock("../../../../utilities/server-actions", () => ({
+	getPlaceholder: jest.fn(),
+}));
 
 describe("newSupabaseBookPreviewPreviewAPI", () => {
 	describe("retrieveRecords", () => {

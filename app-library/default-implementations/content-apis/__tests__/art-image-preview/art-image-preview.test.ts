@@ -5,6 +5,10 @@ import {
 	faultySupabaseSpySelectMockImplementation,
 	supabaseSpySelectMockImplementation,
 } from "./data";
+jest.mock("../../../../utilities/server-actions", () => ({
+	getPlaceholder: jest.fn(),
+}));
+
 describe("newSupabaseArtImagePreviewAPI", () => {
 	describe("retrieveRecords", () => {
 		let supabaseSpy: jest.SpyInstance;

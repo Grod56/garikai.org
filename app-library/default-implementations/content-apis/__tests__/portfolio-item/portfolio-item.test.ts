@@ -5,6 +5,9 @@ import {
 	supabaseSpySelectMockImplementation,
 	faultySupabaseSpySelectMockImplementation,
 } from "./data";
+jest.mock("../../../../utilities/server-actions", () => ({
+	getPlaceholder: jest.fn(),
+}));
 
 describe("newSupabasePortfolioItemAPI", () => {
 	describe("retrieveRecords", () => {

@@ -5,6 +5,10 @@ import {
 	bloggerSpySelectMockImplementation,
 } from "./data";
 import { newBloggerPostPreviewAPI } from "../../post-preview/api";
+jest.mock("../../../../utilities/server-actions", () => ({
+	getPlaceholder: jest.fn(),
+}));
+
 describe("newBloggerPostPreviewPreviewAPI", () => {
 	describe("retrieveRecords", () => {
 		let bloggerSpy: jest.SpyInstance;
