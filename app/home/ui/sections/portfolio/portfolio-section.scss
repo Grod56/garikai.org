@@ -10,7 +10,7 @@
 		@include objects.fit-container;
 
 		[data-customname="card-thumbnail"] {
-			@include objects.definitive-dimension(height, 11em);
+			@include objects.definitive-dimension(height, 9em);
 		}
 	}
 }

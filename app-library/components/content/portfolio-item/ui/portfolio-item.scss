@@ -34,7 +34,7 @@
 		}
 		.description {
 			@include image-card-details-text.body(true);
-			@include text.limit-lines(5);
+			@include text.limit-lines(4);
 
 			line-height: 2.2;
 		}
