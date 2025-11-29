@@ -3,7 +3,7 @@
 @use "../../../../../app-library/styles/utilities/objects";
 
 .portfolio-items-container {
-	@include grid-container.grid(3, "horizontal", false, false);
+	@include grid-container.grid(5, "horizontal", false, false);
 
 	.portfolio-item,
 	.image-card-skeleton {
@@ -23,7 +23,7 @@
 		}
 	}
 	.portfolio-items-container {
-		@include grid-container.grid(4, "horizontal", true, true);
+		@include grid-container.grid(5, "horizontal", true, true);
 
 		// max-width: fit-content;
 
