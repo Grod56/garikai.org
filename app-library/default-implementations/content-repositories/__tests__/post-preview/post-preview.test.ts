@@ -15,9 +15,12 @@ describe("newPostPreviewRepositoryVIInterface", () => {
 					testRepositoryInstantiatorAPI,
 				);
 			const newModelView = await waitFor(() =>
-				viewInteractionInterface.produceModelView({
-					type: RepositoryInteractionType.RETRIEVE,
-				}),
+				viewInteractionInterface.produceModelView(
+					{
+						type: RepositoryInteractionType.RETRIEVE,
+					},
+					null,
+				),
 			);
 			const testRecords = await waitFor(() =>
 				testRepositoryInstantiatorAPI.retrieveRecords(),
@@ -70,9 +73,12 @@ describe("newPostPreviewRepositoryVIInterface", () => {
 					faultyRepositoryInstantiatorAPI(errorMessage),
 				);
 			await expect(
-				viewInteractionInterface.produceModelView({
-					type: RepositoryInteractionType.RETRIEVE,
-				}),
+				viewInteractionInterface.produceModelView(
+					{
+						type: RepositoryInteractionType.RETRIEVE,
+					},
+					null,
+				),
 			).rejects.toEqual(errorMessage);
 		});
 	});
