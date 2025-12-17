@@ -50,7 +50,7 @@ const SocialLink = function ({ model }) {
 						["X", () => <FontAwesomeIcon icon={X} />],
 						["YouTube", () => <FontAwesomeIcon icon={Youtube} />],
 					]),
-					FallBackComponent: () => <FontAwesomeIcon icon={Other} />,
+					FallbackComponent: () => <FontAwesomeIcon icon={Other} />,
 				})}
 			/>
 		</Link>
