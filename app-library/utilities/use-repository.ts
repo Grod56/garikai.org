@@ -16,8 +16,9 @@ export function useStatefulRepository<V extends ModelView>(
 	const { interact } = model;
 
 	useEffect(() => {
-		interact({ type: RepositoryInteractionType.RETRIEVE });
-	}, [interact]);
+		if (!model.modelView)
+			interact({ type: RepositoryInteractionType.RETRIEVE });
+	}, [interact, model.modelView]);
 
 	return model;
 }
