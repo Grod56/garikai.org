@@ -6,6 +6,8 @@ on:
         paths:
             - "app/**"
             - "app-library/**"
+            - "package.json"
+            - ".github/workflows/source-check.yml"
 
 jobs:
     source-check:
