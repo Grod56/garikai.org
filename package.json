@@ -8,7 +8,7 @@
 		"lint:native": "tsc --noEmit",
 		"lint:eslint": "next lint",
 		"lint:styles": "stylelint **/*.scss",
-		"lint": "npm run lint:native && npm run lint:eslint && pnpm run lint:styles",
+		"lint": "npm run lint:native && npm run lint:eslint && npm run lint:styles",
 		"fix:styles": "npm run lint:styles --fix",
 		"fix:eslint": "npm run lint:eslint --fix",
 		"fix:lint": "npm run fix:eslint && npm run fix:styles",
