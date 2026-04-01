@@ -37,7 +37,7 @@ const footerModel = newFooterModel({
 		{
 			socialLink: {
 				type: "Email",
-				link: "mailto:rodneygaryx29@gmail.com",
+				link: "mailto:me@garikai.org",
 			},
 		},
 		{
@@ -48,23 +48,8 @@ const footerModel = newFooterModel({
 		},
 		{
 			socialLink: {
-				type: "Instagram",
-				link: "https://instagram.com/_garikai_",
-			},
-		},
-		{
-			socialLink: {
 				type: "YouTube",
 				link: "https://youtube.com/c/GarikaiGumbo",
-			},
-		},
-		{
-			socialLink: {
-				type: "WhatsApp",
-				link: "https://wa.me/263733343216".concat(
-					"?text=Hello Garikai, I was referred to this " +
-						"number from your website.",
-				) as `https://wa.me/${string}`,
 			},
 		},
 	],
