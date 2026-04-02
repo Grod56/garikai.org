@@ -13,7 +13,8 @@ export type SocialLink =
 	| SocialLinkTypeObject<"GitHub", `https://github.com/${string}`>
 	| SocialLinkTypeObject<"YouTube", `https://youtube.com/${string}`>
 	| SocialLinkTypeObject<"WhatsApp", `https://wa.me/${string}`>
-	| SocialLinkTypeObject<"Email", `mailto:${string}`>;
+	| SocialLinkTypeObject<"Email", `mailto:${string}`>
+	| SocialLinkTypeObject<"Bluesky", `https://bsky.app/${string}`>;
 
 export interface SocialLinkModelView extends WidgetComponentModelView {
 	socialLink: SocialLink;

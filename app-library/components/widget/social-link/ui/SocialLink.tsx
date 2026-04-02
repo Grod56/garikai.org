@@ -8,6 +8,7 @@ import {
 	faFacebook as Facebook,
 	faGithub as Github,
 	faXTwitter as X,
+	faBluesky as Bluesky,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope as Email } from "@fortawesome/free-regular-svg-icons";
 import { faEarthAmericas as Other } from "@fortawesome/free-solid-svg-icons";
@@ -49,6 +50,7 @@ const SocialLink = function ({ model }) {
 						["WhatsApp", () => <FontAwesomeIcon icon={WhatsApp} />],
 						["X", () => <FontAwesomeIcon icon={X} />],
 						["YouTube", () => <FontAwesomeIcon icon={Youtube} />],
+						["Bluesky", () => <FontAwesomeIcon icon={Bluesky} />],
 					]),
 					FallbackComponent: () => <FontAwesomeIcon icon={Other} />,
 				})}

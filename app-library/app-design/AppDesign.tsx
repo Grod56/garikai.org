@@ -52,6 +52,12 @@ const footerModel = newFooterModel({
 				link: "https://youtube.com/c/GarikaiGumbo",
 			},
 		},
+		{
+			socialLink: {
+				type: "Bluesky",
+				link: "https://bsky.app/profile/garikai.org",
+			},
+		},
 	],
 });
 
