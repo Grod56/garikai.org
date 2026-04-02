@@ -8,7 +8,9 @@ on:
             - "app-library/**"
             - "package.json"
             - ".github/workflows/source-check.yml"
-
+    pull_request:
+        branches:
+            - "**"
 jobs:
     source-check:
         name: Execute Source Check
