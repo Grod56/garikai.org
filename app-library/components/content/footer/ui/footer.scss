@@ -9,7 +9,7 @@
 		color: var(--secondary-color-1);
 
 		.footer-content {
-			@include flexible-container.horizontal(2em);
+			@include flexible-container.vertical(2em);
 			@include flexible-container.center;
 
 			flex-wrap: wrap;
