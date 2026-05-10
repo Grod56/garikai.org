@@ -12,26 +12,32 @@
 			@include flexible-container.vertical(2em);
 			@include flexible-container.center;
 
-			flex-wrap: wrap;
 			padding: 3em;
 			min-height: 10em;
 
-			.copyright {
-				font-size: 1rem;
-				min-width: fit-content;
-				text-align: center;
-			}
 			hr {
 				width: 75vw;
 				border-top: 1px solid var(--secondary-color-1);
 			}
-			.socials {
-				@include flexible-container.horizontal(0.94rem);
 
-				font-size: 1.25rem;
+			.bottom-bar {
+				@include flexible-container.horizontal(2em);
 
-				.social-link {
-					color: var(--secondary-color-1);
+				flex-wrap: wrap;
+
+				.copyright {
+					font-size: 1rem;
+					min-width: fit-content;
+					text-align: center;
+				}
+				.socials {
+					@include flexible-container.horizontal(0.94rem);
+
+					font-size: 1.25rem;
+
+					.social-link {
+						color: var(--secondary-color-1);
+					}
 				}
 			}
 		}

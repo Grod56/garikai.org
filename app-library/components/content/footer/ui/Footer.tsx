@@ -15,14 +15,16 @@ const Footer = function ({ model }) {
 		<footer className={ELEMENT_NAME} id={id} data-testid={ELEMENT_NAME}>
 			<div className="footer-content">
 				<hr />
-				<span className="copyright">{copyright}</span>
-				<div className="socials">
-					<ComponentList
-						model={newReadonlyModel({
-							componentModels: socialLinkModels,
-							Component: SocialLink,
-						})}
-					/>
+				<div className="bottom-bar">
+					<span className="copyright">{copyright}</span>
+					<div className="socials">
+						<ComponentList
+							model={newReadonlyModel({
+								componentModels: socialLinkModels,
+								Component: SocialLink,
+							})}
+						/>
+					</div>
 				</div>
 			</div>
 		</footer>
