@@ -22,6 +22,7 @@
 
 			.bottom-bar {
 				@include flexible-container.horizontal(2em);
+				@include flexible-container.center;
 
 				flex-wrap: wrap;
 
