@@ -23,7 +23,7 @@
 		}
 	}
 	.portfolio-items-container {
-		@include grid-container.grid(5, "horizontal", true, true);
+		@include grid-container.grid(3, "horizontal", true, true);
 
 		// max-width: fit-content;
 
