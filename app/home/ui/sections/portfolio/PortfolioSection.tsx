@@ -14,9 +14,10 @@ import {
 import { newReadonlyModel } from "@mvc-react/mvc";
 import { PortfolioSectionModel } from "./portfolio-section-model";
 import "./portfolio-section.scss";
+import Link from "next/link";
 
 const PortfolioSection = function ({ model }) {
-	const { sectionTitle, portfolioItemAPI } = model.modelView;
+	const { sectionTitle, portfolioItemAPI, portfolioURL } = model.modelView;
 	const { modelView: repositoryModelView } = useStatefulRepository(
 		newStatifiableModel(
 			newPortfolioItemRepositoryVIInterface(portfolioItemAPI),
@@ -61,6 +62,13 @@ const PortfolioSection = function ({ model }) {
 					})}
 				/>
 			</div>
+			<Link
+				href={portfolioURL.href}
+				className="view-more"
+				target="_blank"
+			>
+				View More
+			</Link>
 		</SiteSection>
 	);
 } as ModeledVoidComponent<PortfolioSectionModel>;

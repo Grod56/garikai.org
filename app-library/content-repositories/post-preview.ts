@@ -2,10 +2,10 @@ import { PostPreviewModel } from "@/app-library/components/content/post-preview/
 import { RepositoryModel, RepositoryModelInteraction } from "./repository";
 import { FeaturedPostPreviewModel } from "@/app-library/components/content/post-preview/featured-post-preview-model";
 
-export interface PostPreviewRepositoryModelView {
+export type PostPreviewRepositoryModelView = {
 	readonly recentPostPreviewModels: PostPreviewModel[];
 	readonly featuredPostPreviewModel: FeaturedPostPreviewModel;
-}
+};
 
 export type PostPreviewRepositoryModelInteraction = RepositoryModelInteraction;
 

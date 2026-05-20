@@ -1,3 +1,3 @@
-export interface WidgetComponentModelView {
+export type WidgetComponentModelView = {
 	readonly customName?: string;
-}
+};

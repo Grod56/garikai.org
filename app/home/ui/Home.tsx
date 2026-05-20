@@ -15,6 +15,7 @@ import ReadingListSection from "./sections/reading-list/ReadingListSection";
 
 // Config
 const blogURL = new URL(process.env.NEXT_PUBLIC_BLOG_URL!);
+const portfolioURL = new URL(process.env.NEXT_PUBLIC_PORTFOLIO_URL!);
 
 export default function Home() {
 	const mainModel = newReadonlyModel({ id: "home", name: "home" });
@@ -34,6 +35,7 @@ export default function Home() {
 				model={newReadonlyModel({
 					sectionTitle: "Projects",
 					portfolioItemAPI,
+					portfolioURL,
 				})}
 			/>
 			<ArtSection

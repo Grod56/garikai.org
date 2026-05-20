@@ -3,7 +3,7 @@ import { ContentComponentModelView } from "../content-model";
 
 export type HeaderModel = ReadonlyModel<HeaderModelView>;
 
-export interface HeaderModelView extends ContentComponentModelView {
+export type HeaderModelView = ContentComponentModelView & {
 	readonly headerTitle: string;
 	readonly headerSubtitle: string;
-}
+};

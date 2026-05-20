@@ -4,9 +4,9 @@ import { ReadonlyModel } from "@mvc-react/mvc";
 
 export type BookPreviewModel = ReadonlyModel<BookPreviewModelView>;
 
-export interface BookPreviewModelView extends ContentComponentModelView {
+export type BookPreviewModelView = ContentComponentModelView & {
 	readonly title: string;
 	readonly author: string;
 	readonly bookLink: URL;
 	readonly cover: Image;
-}
+};

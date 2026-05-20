@@ -1,3 +1,3 @@
-export interface ContentComponentModelView {
+export type ContentComponentModelView = {
 	readonly id: string;
-}
+};

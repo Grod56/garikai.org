@@ -3,7 +3,7 @@ import { ReadonlyModel } from "@mvc-react/mvc";
 
 export type SiteSectionModel = ReadonlyModel<SiteSectionModelView>;
 
-export interface SiteSectionModelView extends ContentComponentModelView {
+export type SiteSectionModelView = ContentComponentModelView & {
 	readonly sectionName: string;
 	readonly sectionTitle: string;
-}
+};

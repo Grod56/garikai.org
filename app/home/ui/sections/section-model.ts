@@ -1,3 +1,3 @@
-export interface SectionModelView {
+export type SectionModelView = {
 	sectionTitle: string;
-}
+};

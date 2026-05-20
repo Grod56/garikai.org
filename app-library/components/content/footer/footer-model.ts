@@ -4,7 +4,7 @@ import { ContentComponentModelView } from "../content-model";
 
 export type FooterModel = ReadonlyModel<FooterModelView>;
 
-export interface FooterModelView extends ContentComponentModelView {
+export type FooterModelView = ContentComponentModelView & {
 	copyright: string;
 	socialLinkModels: SocialLinkModel[];
-}
+};

@@ -16,8 +16,8 @@ export type SocialLink =
 	| SocialLinkTypeObject<"Email", `mailto:${string}`>
 	| SocialLinkTypeObject<"Bluesky", `https://bsky.app/${string}`>;
 
-export interface SocialLinkModelView extends WidgetComponentModelView {
+export type SocialLinkModelView = WidgetComponentModelView & {
 	socialLink: SocialLink;
-}
+};
 
 export type SocialLinkModel = ReadonlyModel<SocialLinkModelView>;

@@ -3,6 +3,6 @@ import { ContentComponentModelView } from "../content-model";
 
 export type MainModel = ReadonlyModel<MainModelView>;
 
-export interface MainModelView extends ContentComponentModelView {
+export type MainModelView = ContentComponentModelView & {
 	readonly name: string;
-}
+};

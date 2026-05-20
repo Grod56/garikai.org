@@ -5,9 +5,9 @@ export enum RecentPostPreviewsPlaceholderType {
 	PENDING,
 }
 
-export interface RecentPostPreviewsPlaceholderModelView {
+export type RecentPostPreviewsPlaceholderModelView = {
 	recentPostPreviewModels: PostPreviewModel[] | undefined;
-}
+};
 
 export type RecentPostPreviewsPlaceholderModel =
 	ReadonlyModel<RecentPostPreviewsPlaceholderModelView>;

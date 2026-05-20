@@ -1,9 +1,9 @@
 import { PortfolioItemModel } from "../components/content/portfolio-item/portfolio-item-model";
 import { RepositoryModel, RepositoryModelInteraction } from "./repository";
 
-export interface PortfolioItemRepositoryModelView {
+export type PortfolioItemRepositoryModelView = {
 	portfolioItemModels: PortfolioItemModel[];
-}
+};
 
 export type PortfolioItemRepositoryModelInteraction =
 	RepositoryModelInteraction;

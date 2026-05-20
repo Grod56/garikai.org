@@ -5,7 +5,7 @@ import { WidgetComponentModelView } from "../widget-model";
 
 export type ImageCardModel = ReadonlyModel<ImageCardModelView>;
 
-export interface ImageCardModelView extends WidgetComponentModelView {
+export type ImageCardModelView = WidgetComponentModelView & {
 	readonly thumbnail: Image;
 	readonly orientation: Orientation;
-}
+};

@@ -4,6 +4,6 @@ import { WidgetComponentModelView } from "../widget-model";
 
 export type ImageCardSkeletonModel = ReadonlyModel<ImageCardSkeletonModelView>;
 
-export interface ImageCardSkeletonModelView extends WidgetComponentModelView {
+export type ImageCardSkeletonModelView = WidgetComponentModelView & {
 	readonly orientation: Orientation;
-}
+};

@@ -3,6 +3,6 @@ import { WidgetComponentModelView } from "../widget-model";
 
 export type LinkedComponentModel = ReadonlyModel<LinkedComponentModelView>;
 
-export interface LinkedComponentModelView extends WidgetComponentModelView {
+export type LinkedComponentModelView = WidgetComponentModelView & {
 	readonly link: URL;
-}
+};

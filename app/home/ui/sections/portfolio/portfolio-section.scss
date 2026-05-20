@@ -1,7 +1,13 @@
 @use "../../../../../app-library/styles/utilities/grid-container";
+@use "../../../../../app-library/styles/utilities/flexible-container";
 @use "../../../../../app-library/styles/utilities/layout";
 @use "../../../../../app-library/styles/utilities/objects";
 
+.site-section[data-sectionname="portfolio"] {
+	.content-layer {
+		@include flexible-container.vertical(2em);
+	}
+}
 .portfolio-items-container {
 	@include grid-container.grid(3, "horizontal", false, false);
 

@@ -3,6 +3,6 @@ import { WidgetComponentModelView } from "../widget-model";
 
 export type BannerModel = ReadonlyModel<BannerModelView>;
 
-export interface BannerModelView extends WidgetComponentModelView {
+export type BannerModelView = WidgetComponentModelView & {
 	readonly bannerText: string;
-}
+};

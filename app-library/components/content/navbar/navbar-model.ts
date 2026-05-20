@@ -4,6 +4,6 @@ import { ContentComponentModelView } from "../content-model";
 
 export type NavbarModel = ReadonlyModel<NavbarModelView>;
 
-export interface NavbarModelView extends ContentComponentModelView {
+export type NavbarModelView = ContentComponentModelView & {
 	readonly navlinkModels: NavlinkModel[];
-}
+};
