@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Garikai Gumbo",
 		siteName: "Garikai Gumbo",
+		type: "website",
 	},
 };
 const jsonLd = {
