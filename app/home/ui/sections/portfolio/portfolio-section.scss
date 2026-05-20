@@ -7,9 +7,6 @@
 	.content-layer {
 		@include flexible-container.vertical(2em);
 	}
-	.view-more {
-		align-self: self-start;
-	}
 }
 .portfolio-items-container {
 	@include grid-container.grid(3, "horizontal", false, false);
@@ -49,5 +46,8 @@
 		.image-card-skeleton {
 			@include objects.definitive-dimension(width, 100%);
 		}
+	}
+	.view-more {
+		align-self: self-start;
 	}
 }
