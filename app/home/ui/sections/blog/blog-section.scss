@@ -3,6 +3,8 @@
 @use "../../../../../app-library/styles/utilities/flexible-container";
 @use "../../../../../app-library/styles/utilities/objects";
 
+$--min-recent-posts-item-width: 13em;
+
 .site-section[data-sectionname="blog"] {
 	.content-layer {
 		@include flexible-container.vertical(2em);
@@ -26,7 +28,14 @@
 
 			.post-preview,
 			.image-card-skeleton {
-				min-width: max(13em, 100%);
+				/* Could've used one max() function for 
+				small screen and wide screen, 
+				but causes overlaps in Firefox for some reason 
+				*/
+				@include objects.definitive-dimension(
+					width,
+					$--min-recent-posts-item-width
+				);
 
 				[data-customname="card-thumbnail"] {
 					@include objects.definitive-dimension(height, 7em);
@@ -51,6 +60,11 @@
 			}
 			.recent-posts-container {
 				@include grid-container.grid(3, horizontal, true, true);
+				.post-preview,
+				.image-card-skeleton {
+					$--width: max($--min-recent-posts-item-width, 100%);
+					@include objects.definitive-dimension(width, $--width);
+				}
 			}
 		}
 	}
