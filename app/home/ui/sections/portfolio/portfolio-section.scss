@@ -7,6 +7,9 @@
 	.content-layer {
 		@include flexible-container.vertical(2em);
 	}
+	.view-more {
+		align-self: self-start;
+	}
 }
 .portfolio-items-container {
 	@include grid-container.grid(3, "horizontal", false, false);
