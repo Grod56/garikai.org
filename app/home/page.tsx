@@ -26,6 +26,23 @@ export const metadata: Metadata = {
 	},
 };
 
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	name: "Garikai Gumbo",
+	url: "https://garikai.org/home",
+};
+
 export default function Page() {
-	return <Home />;
+	return (
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify(structuredData),
+				}}
+			/>
+			<Home />
+		</>
+	);
 }
