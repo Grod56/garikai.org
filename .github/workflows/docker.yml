@@ -32,6 +32,16 @@ jobs:
             - name: Build and push Docker image
               uses: docker/build-push-action@v7
               with:
+                  secrets: |
+                      supabaseAnonKey=${{ secrets.SUPABASE_ANON_KEY }}
+                      supabaseUrl=${{ secrets.SUPABASE_URL }}
+                  build-args: |
+                      PORT=${{ '3000' }}
+                      BLOG_URL=${{ vars.BLOG_URL }}
+                      PORTFOLIO_URL=${{ vars.PORTFOLIO_URL }}
+                      HEADER_TITLE=${{ vars.HEADER_TITLE }}
+                      HEADER_SUBTITLE=${{ vars.HEADER_SUBTITLE }}
+                      COPYRIGHT_TEXT=${{ vars.COPYRIGHT_TEXT }}
                   push: ${{ github.event_name != 'pull_request' }}
                   tags: ${{ steps.meta.outputs.tags }}
                   annotations: ${{ steps.meta.outputs.annotations }}
