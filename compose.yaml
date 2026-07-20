@@ -1,0 +1,26 @@
+services:
+    webapp:
+        image: ${DOCKER_USERNAME:-grod56}/website
+        build:
+            context: .
+            secrets:
+                - supabaseAnonKey
+                - supabaseUrl
+            args:
+                - PORT=${PORT:-3000}
+                - BLOG_URL=${NEXT_PUBLIC_BLOG_URL:-https://acme.com/blog}
+                - PORTFOLIO_URL=${NEXT_PUBLIC_PORTFOLIO_URL:-https://acme.com/portfolio}
+                - HEADER_TITLE=${HEADER_TITLE:-Title}
+                - HEADER_SUBTITLE=${HEADER_SUBTITLE:-Subtitle}
+                - COPYRIGHT_TEXT=${COPYRIGHT_TEXT:-All Rights Reserved}
+
+        ports:
+            - ${PORT:-3000}:${PORT:-3000}
+        env_file:
+            - .env
+
+secrets:
+    supabaseAnonKey:
+        environment: SUPABASE_ANON_KEY
+    supabaseUrl:
+        environment: SUPABASE_URL
