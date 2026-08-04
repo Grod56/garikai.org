@@ -6,7 +6,7 @@
 		"start": "next start",
 		"test": "jest",
 		"lint:native": "tsc --noEmit",
-		"lint:eslint": "next lint",
+		"lint:eslint": "eslint app/ app-library/",
 		"lint:styles": "stylelint **/*.scss",
 		"lint": "npm run lint:native && npm run lint:eslint && npm run lint:styles",
 		"fix:styles": "npm run lint:styles --fix",
