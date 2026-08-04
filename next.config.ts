@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 import withPlaiceholder from "@plaiceholder/next";
 
-const IS_DOCKER_BUILD = process.env.IS_DOCKER_BUILD
+const IS_DOCKER_BUILD = process.env.IS_DOCKER_BUILD;
 const IS_DEV = process.env.NODE_ENV === "development";
 
 const nextConfig: NextConfig = {
@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
 	sassOptions: {
 		implementation: "sass-embedded",
 	},
+	turbopack: {},
 	images: {
 		remotePatterns: [
 			{
