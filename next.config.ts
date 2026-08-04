@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import withPlaiceholder from "@plaiceholder/next";
 
+const IS_DOCKER_BUILD = process.env.IS_DOCKER_BUILD;
 const IS_DEV = process.env.NODE_ENV === "development";
 
 const nextConfig: NextConfig = {
@@ -9,12 +10,10 @@ const nextConfig: NextConfig = {
 				reactRemoveProperties: { properties: ["^data-testid$"] },
 			}
 		: {},
-	eslint: {
-		dirs: ["app-library", "app"],
-	},
 	sassOptions: {
 		implementation: "sass-embedded",
 	},
+	turbopack: {},
 	images: {
 		remotePatterns: [
 			{
@@ -23,7 +22,7 @@ const nextConfig: NextConfig = {
 			},
 		],
 	},
-	output: "standalone",
+	output: IS_DOCKER_BUILD ? "standalone" : undefined,
 };
 
 export default withPlaiceholder(nextConfig);
